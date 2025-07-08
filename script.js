@@ -1,6 +1,86 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Hero Carousel ---
+    const heroSection = document.getElementById('home');
+    if (heroSection) {
+        const upNextData = [ // Data for the "UP NEXT" card, indexed by the CURRENTLY active slide
+            { 
+                title: "Layanan hukum luas untuk segala kebutuhan.", 
+                thumbnail: "https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-perdata.webp",
+            },
+            { 
+                title: "Garda terdepan dalam membela hak-hak anda.",
+                thumbnail: "https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-bisnis.webp"
+            },
+            { 
+                title: "LBH Garda Nusa: Keadilan untuk Semua.",
+                thumbnail: "https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp"
+            }
+        ];
+
+        const heroSlides = document.querySelectorAll('#hero-slides .hero-slide');
+        const upNextCard = document.getElementById('up-next-card');
+        const upNextTitle = document.getElementById('up-next-title');
+        const upNextThumbnail = document.getElementById('up-next-thumbnail');
+        const progressBars = document.querySelectorAll('#progress-bars .progress-bar');
+        
+        let currentSlideIndex = 0;
+        const slideIntervalTime = 50000;
+        let heroInterval;
+
+        function showSlide(newIndex) {
+            if (!heroSlides.length || !progressBars.length) return;
+            
+            const index = (newIndex + heroSlides.length) % heroSlides.length;
+
+            // Deactivate previous slide and progress bar
+            heroSlides[currentSlideIndex].style.opacity = '0';
+            const prevProgressBar = progressBars[currentSlideIndex];
+            prevProgressBar.classList.remove('active');
+
+            // Set new index
+            currentSlideIndex = index;
+            
+            // Activate new slide
+            heroSlides[currentSlideIndex].style.opacity = '1';
+
+            // Restart animation on the new progress bar
+            const currentProgressBar = progressBars[currentSlideIndex];
+            currentProgressBar.classList.remove('active');
+            void currentProgressBar.offsetWidth; // Force DOM reflow to restart animation
+            currentProgressBar.classList.add('active');
+            
+            // Update 'Up Next' card
+            const upNextInfo = upNextData[currentSlideIndex];
+            upNextTitle.textContent = upNextInfo.title;
+            upNextThumbnail.src = upNextInfo.thumbnail;
+        }
+
+        function startSlideShow() {
+            stopSlideShow();
+            heroInterval = setInterval(() => {
+                showSlide(currentSlideIndex + 1);
+            }, slideIntervalTime);
+        }
+
+        function stopSlideShow() {
+            clearInterval(heroInterval);
+        }
+
+        if (heroSlides.length > 0 && upNextCard) {
+            // Initial setup
+            showSlide(0);
+            startSlideShow();
+
+            upNextCard.addEventListener('click', () => {
+                showSlide(currentSlideIndex + 1);
+                startSlideShow(); // Reset interval
+            });
+        }
+    }
+
+
     // --- Mobile Menu Toggle ---
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -23,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
+            // Do not scroll for hero buttons that just trigger other functionality
+            if (targetId === '#') return;
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
