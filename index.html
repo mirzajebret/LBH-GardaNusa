@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Under Construction - LBH-GARDANUSA</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Extend Tailwind theme dengan palet warna LBH-GARDANUSA -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gardanusaRed: '#6B1E09',
+            gardanusaGold: '#C39222',
+            gardanusaBlack: '#111111',
+            gardanusaCream: '#F5EBDD',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="relative bg-gardanusaCream text-gardanusaBlack flex items-center justify-center min-h-screen p-4 overflow-hidden">
+
+  <!-- Backdrop full-width image hukum -->
+  <img
+    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    alt="Backdrop Hukum"
+    class="absolute inset-0 w-full h-full object-cover opacity-20"
+  />
+
+  <!-- Konten Utama -->
+  <div class="relative z-10 text-center max-w-md">
+    <!-- Ikon konstruksi -->
+    <img class="mx-auto mb-6 w-64 h-64" src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp" alt="Logo LBH-GARDANUSA">
+
+    <!-- Judul -->
+    <h1 class="text-4xl font-extrabold text-gardanusaRed mb-4">Under Construction</h1>
+
+    <!-- Pesan -->
+       <p class="text-lg text-gray-700 mb-8 max-w-xl">
+      Website <span class="font-semibold">LBH-GARDANUSA</span><br>
+      sedang dalam pembangunan.  
+      Silakan kunjungi kembali nanti.
+    </p>
+  </div>
+
+</body>
+</html>
