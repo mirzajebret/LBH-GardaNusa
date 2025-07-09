@@ -93,23 +93,36 @@
                         <div class="w-full h-1  rounded-full overflow-hidden"><div class="progress-bar h-full bg-transparent"></div></div>
                     </div>
 
-                    <!-- Up Next Card -->
-                    <div id="up-next-card" class="bg-white/90 text-black p-4  flex items-center gap-4 cursor-pointer shadow-lg backdrop-blur-sm hover:bg-white transition-colors duration-300">
-                        <div class="text-left">
-                            <p class="text-xs font-semibold uppercase text-gray-500 tracking-wider">UP NEXT</p>
-                            <h3 id="up-next-title" class="font-semibold"></h3>
+                    <!-- Up Next Card (Final Layout) -->
+                    <div id="up-next-card" class="bg-white/90 text-black flex w-full max-w-md h-20 shadow-lg backdrop-blur-sm hover:bg-white transition-colors duration-300 cursor-pointer">
+                        <!-- Text Section (Kiri) -->
+                        <div class="flex flex-col justify-center px-4 flex-1">
+                            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Up Next</p>
+                            <h3 id="up-next-title" class="font-semibold text-sm leading-snug">
+                                Layanan hukum luas untuk segala kebutuhan.
+                            </h3>
                         </div>
-                        <img id="up-next-thumbnail" src="" alt="Up Next" class="w-20 h-14 object-cover rounded-md">
+
+                        <!-- Thumbnail (Kanan, tanpa padding & tanpa rounded) -->
+                        <img id="up-next-thumbnail" src="" alt="Up Next" class="w-24 h-full object-cover">
                     </div>
+
                 </div>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+        <section class="bg-gardanusa-cream text-white text-center">
+            <div class="container mx-auto ">
+                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/lbh-gardanusa-686e10794b393.webp" alt="Mila Kumari" class="object-cover w-full h-full">
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about" class="py-20">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 md:gap-12 items-center">
                 <div class="wow fadeIn">
-                    <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/tentang-lbh-gardanusa.webp" alt="Tim LBH-GARDANUSA berdiskusi" class="rounded-lg shadow-2xl w-full">
+                    <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/tentang-lbh-gardanusa.webp" alt="Tim LBH-GARDANUSA berdiskusi" class="hidden lg:block rounded-lg shadow-2xl w-full">
                 </div>
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold font-sans text-gardanusa-dark-red mb-4">Tentang Kami</h2>
