@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Update button styles
                 tabButtons.forEach(btn => {
-                    btn.classList.remove('bg-[#5a4a3a]', 'text-white');
+                    btn.classList.remove('bg-[#855B2F]', 'text-white');
                     btn.classList.add('bg-gray-100', 'text-stone-600', 'hover:bg-gray-200');
                 });
-                button.classList.add('bg-[#5a4a3a]', 'text-white');
+                button.classList.add('bg-[#855B2F]', 'text-white');
                 button.classList.remove('bg-gray-100', 'text-stone-600', 'hover:bg-gray-200');
                 
                 // Update content visibility
@@ -112,6 +112,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Hamburger Menu Initializer
+    function initHamburgerMenu() {
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = document.getElementById('hamburger-open');
+        const closeIcon = document.getElementById('hamburger-close');
+
+        if (hamburgerButton && mobileMenu && openIcon && closeIcon) {
+            hamburgerButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        }
+    }
+
 
     // Initialize all components
     initSlider('hero-slider-container', 'hero-slide', 'hero-prev', 'hero-next', 'hero-dots', 'hero-dot', 5000);
@@ -119,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTabs('services-reports-section');
     initTabs('gallery-section');
     initTabs('sidebar-section');
+    initHamburgerMenu();
     
     // Update copyright year
     const yearSpan = document.querySelector('footer .bg-\\[\\#3e3428\\] .text-stone-400');
