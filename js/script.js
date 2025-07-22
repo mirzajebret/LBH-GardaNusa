@@ -5,7 +5,7 @@
     if (heroSection) {
         const upNextData = [ // Data for the "UP NEXT" card, indexed by the CURRENTLY active slide
             { 
-                title: "Layanan hukum luas untuk segala kebutuhan.", 
+                title: "Layanan hukum untuk segala kebutuhan.", 
                 thumbnail: "https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-perdata.webp",
             },
             { 
