@@ -1,378 +1,315 @@
-
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LBH-GARDANUSA - Lembaga Bantuan Hukum Garuda Nusantara</title>
-    <meta name="description" content="LBH Garuda Nusantara (LBH-GARDANUSA) menyediakan bantuan hukum profesional dan berintegritas untuk memperjuangkan keadilan bagi masyarakat.">
-    <meta name="keywords" content="LBH, Bantuan Hukum, Garuda Nusantara, Gardanusa, Pengacara, Advokat, Konsultasi Hukum">
-     <link rel="icon" 
-        href="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp" 
-        type="image/webp">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LBH Gardanusa - Keadilan Untuk Semua</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fdfdfb;
+      }
+      /* A custom scrollbar to match the aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8c7b6a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #855B2F;
+      }
+      .slide-active { display: block; }
+      .slide-hidden { display: none; }
+      .tab-content-active { display: block; }
+      .tab-content-hidden { display: none; }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/include.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'gardanusa-dark-red': '#6B1E09',
-                        'gardanusa-gold': '#C39222',
-                        'gardanusa-dark-gold': '#855B2F',
-                        'gardanusa-black': '#111111',
-                        'gardanusa-cream': '#F5EBDD',
-                    },
-                    fontFamily: {
-                        'sans': ['Montserrat', 'sans-serif'],
-                        'body': ['Roboto', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .testimonial-carousel {
-            transition: transform 0.5s ease-in-out;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
 </head>
-<body class="bg-white text-gardanusa-black font-body">
+<body class="bg-gray-100">
 
-    <!-- Header & Navbar -->
-    <header id="header" class="sticky top-0 z-50 bg-gardanusa-dark-gold"></header>
-
-
-    <main>
-         <!-- Hero Section -->
-        <section id="home" class="relative h-[90vh] w-full overflow-hidden text-white">
-            <!-- Slides Container -->
-            <div id="hero-slides">
-                <!-- Slide 1 -->
-                <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://fh.untar.ac.id/wp-content/uploads/2025/03/Sejarah-Bendera-Pusaka-Merah-Putih-Indonesia.jpg');">
-                    <div class="absolute inset-0 bg-white/10"></div>
-                    <div class="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
-                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden mx-auto mb-6 shadow-xl">
-                            <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp" alt="Mila Kumari" class="object-cover w-full h-full">
-                        </div>
-                <h1 class="text-4xl md:text-6xl font-bold font-sans uppercase tracking-widest text-gardanusa-dark-red drop-shadow-lg">Keadilan Untuk Semua</h1>
-                <!-- <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gardanusa-cream/90">Kami hadir sebagai mitra terpercaya Anda dalam memperjuangkan hak dan keadilan.</p> -->
-                 <a href="#footer" class="mt-8 inline-block bg-black text-white hover:bg-gardanusa-dark-red font-medium py-3 px-8 transition duration-300 shadow-xl">
-                            Butuh Bantuan Hukum? <br class="block md:hidden"> Hubungi Kami
-                        </a>
+    <header class="relative bg-cover bg-center" style="background-image: url('https://fh.untar.ac.id/wp-content/uploads/2025/03/Sejarah-Bendera-Pusaka-Merah-Putih-Indonesia.jpg')">
+        <!-- Top section with logo and background -->
+        <div class="relative"></div>
+            <div class="container mx-auto max-w-6xl px-4 py-4 relative">
+                <div class="flex items-center space-x-4">
+                    <div class=" w-28 h-28">
+                        <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp" alt="">
                     </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-perdata.webp');">
-                    <div class="absolute inset-0 bg-white/80"></div>
-                    <div class="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
-                        <h1 class="text-5xl md:text-7xl font-bold font-sans text-gardanusa-dark-red drop-shadow-lg">Layanan hukum untuk segala kebutuhan.</h1>
-                         <a href="#services" class="mt-8 inline-block bg-black text-white hover:bg-gardanusa-dark-red font-semibold py-3 px-8 transition duration-300 shadow-xl">
-                            Layanan Kami
-                        </a>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-bisnis-asset.webp');">
-                    <div class="absolute inset-0 bg-white/80"></div>
-                    <div class="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
-                        <h1 class="text-5xl md:text-7xl text-gardanusa-dark-red font-bold font-sans drop-shadow-lg">Garda terdepan dalam membela hak-hak anda.</h1>
-                        <a href="about.html" class="mt-8 inline-block bg-black text-white hover:bg-gray-800 font-semibold py-3 px-8 transition duration-300 shadow-xl">
-                            Tentang Kami
-                        </a>
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-wider" style="font-family: 'Teko', sans-serif">LEMBAGA BANTUAN HUKUM</h1>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white" style="font-family: 'Teko', sans-serif">GARDANUSA</h2>
                     </div>
                 </div>
             </div>
+            
+        </div>
 
-            <!-- Bottom Controls -->
-            <div class="absolute bottom-0 left-0 right-0 p-4 md:p-8 z-20">
-                <div class="container mx-auto flex justify-between items-end">
-                    <!-- Progress Bars -->
-                    <div id="progress-bars" class="flex items-center gap-1 w-1/3 md:w-1/4">
-                        <div class="w-full h-1  rounded-full overflow-hidden"><div class="progress-bar h-full bg-transparent"></div></div>
-                        <div class="w-full h-1  rounded-full overflow-hidden"><div class="progress-bar h-full bg-transparent"></div></div>
-                        <div class="w-full h-1  rounded-full overflow-hidden"><div class="progress-bar h-full bg-transparent"></div></div>
-                    </div>
-
-                    <!-- Up Next Card (Final Layout) -->
-                    <div id="up-next-card" class="bg-gardanusa-dark-gold text-white flex w-full max-w-md h-20 shadow-lg cursor-pointer">
-                        <!-- Text Section (Kiri) -->
-                        <div class="flex flex-col justify-center px-4 flex-1">
-                            <!-- <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Up Next</p> -->
-                            <h3 id="up-next-title" class="font-semibold text-sm leading-snug">
-                                Layanan hukum luas untuk segala kebutuhan.
-                            </h3>
-                        </div>
-
-                        <!-- Thumbnail (Kanan, tanpa padding & tanpa rounded) -->
-                        <img id="up-next-thumbnail" src="" alt="Up Next" class="w-24 h-full object-cover">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Banner Section -->
-        <section class="bg-gardanusa-cream md:py-8">
-            <div class="container mx-auto ">
-                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/lbh-gardanusa-686e10794b393.webp" alt="Mila Kumari" class="object-contain md:w-full md:h-[500px]">
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section id="about" class="relative py-20 overflow-hidden bg-white">
-            <!-- Background Transparent Image -->
-            <div class="absolute inset-0 z-0 opacity-20">
-                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/tentang-lbh-gardanusa.webp" alt="Backdrop" class="w-full h-full object-cover">
-            </div>
-
-            <!-- Content Container -->
-            <div class="relative z-10 container mx-auto px-6 grid lg:grid-cols-2 lg:gap-12 items-center">
-                <!-- Left Image -->
-                <div class="wow fadeIn mb-10 md:mb-0">
-                    <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/tentang-lbh-gardanusa.webp" 
-                        alt="Tim LBH-GARDANUSA berdiskusi"
-                        class="hidden lg:block shadow-2xl w-full">
-                </div>
-
-                <!-- Right Text Content -->
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold font-serif text-gardanusa-dark-red mb-4">Tentang Kami</h2>
-                    <p class="text-gray-700 mb-4">Lembaga Bantuan Hukum Garuda Nusantara (LBH-GARDANUSA) didirikan atas dasar kepedulian terhadap penegakan hukum dan keadilan di Indonesia. Kami adalah tim advokat profesional yang berdedikasi untuk memberikan layanan hukum berkualitas, baik bagi individu maupun korporasi.</p>
-                    <p class="text-gray-700">Dengan berpegang pada nilai integritas, profesionalisme, dan keberpihakan pada kebenaran, kami berkomitmen untuk menjadi Garda terdepan dalam membela hak-hak anda.</p>
-                    <a href="about.html" class="mt-8 inline-block bg-black text-white hover:bg-gray-800 font-medium py-3 px-8 transition duration-300 shadow-xl">
-                        Selengkapnya
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Kabar Terkini Section -->
-        <section id="kabar-terkini" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold font-sans text-gardanusa-dark-red mb-12 text-center">Publikasi</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Article Card 1 -->
-                    <div class="bg-gardanusa-dark-gold overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                        <div class="overflow-hidden">
-                            <a href="artikel/artikel-1.html">
-                               <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/pro-bono.webp" alt="Diskusi hukum pro bono" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                            </a>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col text-left text-white">
-                            <h3 class="text-xl font-bold font-sans  mb-3">Pentingnya Bantuan Hukum Pro Bono</h3>
-                            <p class="text-gray-300 text-sm flex-grow mb-4">Memahami bagaimana bantuan hukum pro bono menjadi pilar penting dalam memastikan akses keadilan bagi seluruh lapisan masyarakat.</p>
-                            <a href="artikel/artikel-1.html" class="self-start  font-medium transition duration-300">
-                                Baca Selengkapnya &rarr;
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Article Card 2 -->
-                    <div class="bg-gardanusa-dark-gold overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                        <div class="overflow-hidden">
-                            <a href="artikel/artikel-2.html">
-                                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/wanprestasi.webp" alt="Dokumen kontrak hukum" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                            </a>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col text-left text-white">
-                            <h3 class="text-xl font-bold font-sans mb-3">Wanprestasi vs Perbuatan Melawan Hukum</h3>
-                            <p class="text-gray-300 text-sm flex-grow mb-4">Seringkali tertukar, artikel ini mengupas tuntas perbedaan mendasar antara wanprestasi dan perbuatan melawan hukum (PMH).</p>
-                             <a href="artikel/artikel-2.html" class="self-start  font-medium transition duration-300">
-                                Baca Selengkapnya &rarr;
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Article Card 3 -->
-                    <div class="bg-gardanusa-dark-gold overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                        <div class="overflow-hidden">
-                            <a href="artikel/artikel-3.html">
-                                <img src="https://picsum.photos/400/250?random=17" alt="Memilih pengacara" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                            </a>
-                        </div>
-                        <div class="p-6 flex-grow flex flex-col text-left text-white">
-                            <h3 class="text-xl font-bold font-sans mb-3">Tips Memilih Pengacara yang Tepat</h3>
-                            <p class="text-gray-300 text-sm flex-grow mb-4">Menemukan advokat yang tepat adalah kunci keberhasilan penanganan kasus Anda. Simak beberapa tips penting yang perlu dipertimbangkan.</p>
-                             <a href="artikel/artikel-3.html" class="self-start font-medium transition duration-300">
-                                Baca Selengkapnya &rarr;
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold font-sans text-gardanusa-dark-red mb-2">Bantuan Hukum</h2>
-                <p class="text-gray-600 mb-12 max-w-3xl mx-auto">Kami menyediakan cakupan bantuan hukum yang luas untuk menjawab segala kebutuhan Anda.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Service Card 1: Pidana -->
-                    <a href="services/pidana.html" class="group block overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-60">
-                        <div class="relative w-full h-full">
-                            <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-pidana-asset.webp" alt="Ilustrasi timbangan keadilan untuk hukum pidana" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gardanusa-dark-gold/90 via-gardanusa-dark-gold/70 to-transparent"></div>
-                            <div class="relative p-6 flex flex-col justify-end h-full text-white">
-                                <div class="flex items-center text-xs text-gardanusa-gold mb-2">
-                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
-                                        <path d="M7 10.5l2 2 4-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span class="pl-1">Pembelaan Ahli</span>
-                                </div>
-                                <h3 class="text-2xl font-bold font-sans text-gardanusa-cream mb-1  transition-colors">Hukum Pidana</h3>
-                                <p class="text-gardanusa-cream/90 text-sm leading-relaxed">Pendampingan di setiap tingkatan proses peradilan, dari penyidikan hingga kasasi.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Service Card 2: Perdata & Keluarga -->
-                    <a href="services/perdata.html" class="group block  overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-60">
-                        <div class="relative w-full h-full">
-                            <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-perdata.webp" alt="Diskusi untuk hukum perdata dan keluarga" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gardanusa-dark-gold/90 via-gardanusa-dark-gold/70 to-transparent"></div>
-                            <div class="relative p-6 flex flex-col justify-end h-full">
-                                <div class="flex items-center text-xs text-gardanusa-gold mb-2">
-                                     <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
-                                        <path d="M7 10.5l2 2 4-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span class="pl-1">Solusi Bijak</span>
-                                </div>
-                                <h3 class="text-2xl font-bold font-sans text-gardanusa-cream mb-1  transition-colors">Hukum Perdata & Keluarga</h3>
-                                <p class="text-gardanusa-cream/90 text-sm leading-relaxed">Menangani sengketa perdata, waris, perkawinan, perceraian, dan hak asuh anak.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Service Card 3: Bisnis & Korporasi -->
-                    <a href="services/bisnis.html" class="group block overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-60">
-                        <div class="relative w-full h-full">
-                            <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/hukum-bisnis-asset.webp" alt="Gedung perkantoran untuk hukum bisnis" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gardanusa-dark-gold/90 via-gardanusa-dark-gold/70 to-transparent"></div>
-                            <div class="relative p-6 flex flex-col justify-end h-full">
-                                 <div class="flex items-center text-xs text-gardanusa-gold mb-2">
-                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
-                                        <path d="M7 10.5l2 2 4-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span class="pl-1">Mitra Korporasi</span>
-                                </div>
-                                <h3 class="text-2xl font-bold font-sans text-gardanusa-cream mb-1  transition-colors">Hukum Bisnis & Korporasi</h3>
-                                <p class="text-gardanusa-cream/90 text-sm leading-relaxed">Nasihat hukum, penyusunan kontrak, dan penyelesaian sengketa bisnis.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Activities Section -->
-        <section id="kegiatan-kami" class="py-8 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold font-sans text-gardanusa-dark-red mb-12 text-center">Kegiatan Kami</h2>
-                <div id="activities-slider-container" class="relative w-full max-w-4xl mx-auto aspect-[2/3] md:aspect-[2/1] overflow-hidden">
-                    <div id="activities-slider" class="flex transition-transform ease-in-out duration-500 h-full">
-                        <!-- Images will be injected by JS -->
-                    </div>
-                    <button id="activity-prev-button" aria-label="Previous slide" class="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-gardanusa-gold transition-all z-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-                    </button>
-                    <button id="activity-next-button" aria-label="Next slide" class="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-gardanusa-gold transition-all z-10">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-                    </button>
-                    
-                    <div id="activity-dots-container" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
-                        <!-- Dots will be injected by JS -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statistics/CTA Section -->
-        <section id="statistics" class="py-10 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-2xl md:text-5xl font-bold font-sans text-gardanusa-black mb-12">
-                    Butuh Bantuan Hukum?<br>Hubungi Kami Hari Ini
-                </h2>
+        <!-- Main Navigation -->
+        <nav class="bg-[#855B2F] border-b-4 border-[#8c7b6a]">
+            <div class="container mx-auto max-w-6xl px-4 flex justify-between items-center">
+                <ul class="flex items-center">
+                    <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg><span class="ml-2 font-semibold uppercase tracking-wider text-sm">Profil</span></a></li>
+                    <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Berita & Media</span></a></li>
+                    <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Layanan Data</span></a></li>
+                    <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Publikasi</span></a></li>
+                </ul>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    <!-- Stat 1 -->
-                    <div>
-                        <h3 class="text-6xl font-bold text-gardanusa-dark-red stat-counter" data-target="750" data-suffix="+">0</h3>
-                        <p class="mt-2 font-bold text-gardanusa-black text-lg">Kasus Ditangani</p>
-                        <p class="text-gray-600 mt-1">Menyediakan layanan hukum terpercaya.</p>
+            </div>
+        </nav>
+
+        <!-- Quick Links -->
+        <div class="bg-gray-100 border-b border-gray-200">
+            <div class="container mx-auto max-w-6xl px-4 py-2">
+                <ul class="grid grid-cols-3 md:grid-cols-6 gap-2 text-center">
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h4M9 12h6"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">KONSULTASI</span></a></li>
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">LAPOR!</span></a></li>
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">WEBMAIL</span></a></li>
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h.01M17 17h.01"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">SIARAN PERS</span></a></li>
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.938 6.126a9 9 0 111.416 12.748"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">PERPUSTAKAAN</span></a></li>
+                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">DONASI</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="bg-white border-b border-gray-200 hidden md:block">
+            <div class="container mx-auto max-w-6xl px-4 py-2">
+                <ul class="flex flex-wrap justify-center items-center text-sm font-medium text-stone-500">
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Pidana</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Perdata</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Tata Usaha Negara</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi HAM</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Buruh & Industri</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Riset & Advokasi</a></li><li class="text-gray-300">|</li>
+                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Pendidikan & Pelatihan</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-6xl p-4 space-y-6">
+        <!-- Hero Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Main Hero Slider -->
+            <div id="hero-slider-container" class="md:col-span-2 relative w-full h-96 overflow-hidden shadow-lg rounded-lg group">
+                <!-- Slides -->
+                <div class="hero-slide w-full h-full bg-cover bg-center transition-opacity duration-700 ease-in-out" style="background-image: url('https://picsum.photos/seed/courtroom/1000/600');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6"><h2 class="text-2xl md:text-3xl font-bold text-white leading-tight">Menegakkan Keadilan Bagi Semua, Tanpa Terkecuali</h2></div>
+                </div>
+                <div class="hero-slide w-full h-full bg-cover bg-center transition-opacity duration-700 ease-in-out hidden" style="background-image: url('https://picsum.photos/seed/lawbooks/1000/600');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6"><h2 class="text-2xl md:text-3xl font-bold text-white leading-tight">Advokasi Kebijakan untuk Masyarakat Marginal</h2></div>
+                </div>
+                <div class="hero-slide w-full h-full bg-cover bg-center transition-opacity duration-700 ease-in-out hidden" style="background-image: url('https://picsum.photos/seed/protest/1000/600');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6"><h2 class="text-2xl md:text-3xl font-bold text-white leading-tight">Bergabung dalam Gerakan Bantuan Hukum Pro Bono</h2></div>
+                </div>
+                <!-- Controls -->
+                <button id="hero-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
+                <button id="hero-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+                <div id="hero-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <button data-index="0" class="hero-dot w-3 h-3 rounded-full bg-white"></button>
+                    <button data-index="1" class="hero-dot w-3 h-3 rounded-full bg-white/50"></button>
+                    <button data-index="2" class="hero-dot w-3 h-3 rounded-full bg-white/50"></button>
+                </div>
+            </div>
+
+            <!-- Side Slider -->
+            <div id="side-slider-container" class="relative w-full h-96 overflow-hidden shadow-lg rounded-lg group">
+                <div class="side-slide w-full h-full bg-cover bg-center transition-opacity duration-700" style="background-image: url('https://picsum.photos/seed/education/600/800');">
+                    <div class="absolute inset-0 bg-black/10"></div><div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/50 w-full"><h3 class="text-white font-semibold">Pendidikan Hukum untuk Komunitas</h3></div>
+                </div>
+                <div class="side-slide w-full h-full bg-cover bg-center transition-opacity duration-700 hidden" style="background-image: url('https://picsum.photos/seed/workshop/600/800');">
+                    <div class="absolute inset-0 bg-black/10"></div><div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/50 w-full"><h3 class="text-white font-semibold">Workshop Bantuan Hukum 2024</h3></div>
+                </div>
+                <div class="side-slide w-full h-full bg-cover bg-center transition-opacity duration-700 hidden" style="background-image: url('https://picsum.photos/seed/charity/600/800');">
+                    <div class="absolute inset-0 bg-black/10"></div><div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/50 w-full"><h3 class="text-white font-semibold">Program Donasi untuk Keadilan</h3></div>
+                </div>
+                <button id="side-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
+                <button id="side-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
+            <div class="flex justify-between items-center mb-4 pb-2 border-b-2 border-gray-200">
+                <div class="flex items-center space-x-2">
+                    <div class="p-2 bg-[#8c7b6a] rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h.01M17 17h.01"></path></svg></div>
+                    <h3 class="text-xl font-bold text-[#855B2F]">BERITA TERKINI</h3>
+                </div>
+                <a href="#" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">LBH Gardanusa Dampingi Korban Penggusuran Paksa</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Memperkuat Jaringan Advokasi di Tingkat Nasional</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Sekjen LBH Hadiri Rapat RUU Perlindungan Data Pribadi</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Final Lomba Debat Hukum: Tim UGM Raih Juara</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Peresmian Kantor Cabang Baru di Surabaya oleh Ketua LBH</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Senin, 21 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Usai Tampil di Konferensi Hukum Internasional</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Menegakkan Tiga Pilar Fundamental Bantuan Hukum</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Wamenkumham Kunjungi Kantor Pusat LBH Gardanusa</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Kamis, 17 Juli 2025</span></div></a></div>
+            </div>
+        </div>
+
+        <!-- Promo Banner -->
+        <div class="relative h-64 md:h-48 bg-cover bg-center rounded-lg shadow-lg flex items-center justify-center p-6 text-center text-white" style="background-image: url('https://picsum.photos/seed/justice/1200/400')">
+            <div class="absolute inset-0 bg-blue-900/70 rounded-lg"></div>
+            <div class="relative z-10">
+                <h3 class="text-2xl md:text-4xl font-extrabold tracking-wide">SEMINAR HUKUM NASIONAL 2025</h3>
+                <p class="mt-2 text-lg md:text-xl font-semibold opacity-90">"Tantangan Bantuan Hukum di Era Digital"</p>
+                <p class="mt-4 text-xl md:text-2xl font-bold text-amber-300">20 - 22 AGUSTUS 2025 | JAKARTA</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Publications Section -->
+                <div class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
+                    <div class="flex justify-between items-center mb-4 pb-2 border-b-2 border-gray-200">
+                        <div class="flex items-center space-x-2">
+                            <div class="p-2 bg-[#8c7b6a] rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg></div>
+                            <h3 class="text-xl font-bold text-[#855B2F]">PUBLIKASI HUKUM</h3>
+                        </div>
+                        <a href="#" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
                     </div>
-                    <!-- Stat 2 -->
-                    <div>
-                        <h3 class="text-6xl font-bold text-gardanusa-dark-red stat-counter" data-target="95" data-suffix="%">0</h3>
-                        <p class="mt-2 font-bold text-gardanusa-black text-lg">Tingkat Keberhasilan</p>
-                        <p class="text-gray-600 mt-1">Mencapai hasil yang baik untuk klien kami.</p>
+                    <ul class="space-y-3">
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Buku Putih Reformasi Agraria 2024</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Panduan Bantuan Hukum Bagi Korban KDRT</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Laporan Tahunan Kebebasan Berpendapat 2023</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Modul Pendidikan Hukum untuk Paralegal</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services and Reports Section -->
+                <div id="services-reports-section" class="grid grid-cols-1  gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
+                        <div class="flex items-center mb-4 pb-2 border-b-2 border-gray-200">
+                            <div class="p-2 bg-[#8c7b6a] rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9"></path></svg></div>
+                            <h3 class="ml-2 text-xl font-bold text-[#855B2F]">LAYANAN ONLINE</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Konsultasi Online</span></a></li>
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Pengaduan Kasus</span></a></li>
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Perpustakaan Digital</span></a></li>
+                        </ul>
                     </div>
-                    <!-- Stat 3 -->
-                    <div>
-                        <h3 class="text-6xl font-bold text-gardanusa-dark-red stat-counter" data-target="100" data-suffix="%">0</h3>
-                        <p class="mt-2 font-bold text-gardanusa-black text-lg">Gratis</p>
-                        <p class="text-gray-600 mt-1">Berdedikasi untuk memberikan pelayanan hukum secara gratis.</p>
-                    </div>
+                    
                 </div>
 
-                <div class="border-t border-gray-300 max-w-2xl mx-auto mb-10"></div>
-
-                <a href="#footer" class="bg-black text-white py-3 px-10 transition duration-300 text-lg shadow-lg">
-                    Dapatkan Bantuan Hukum
-                </a>
-            </div>
-        </section>
-
-
-        <!-- Team Section -->
-        <section id="team" class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-2xl md:text-4xl font-bold font-sans text-gardanusa-dark-red mb-12">Tim Profesional Kami</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Team Member 1 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/300/300?random=2" alt="Foto Budi Santoso" class="w-28 md:w-48 h-auto mx-auto rounded-full shadow-lg mb-4 object-cover">
-                        <h4 class="md:text-xl font-bold text-gardanusa-dark-red">Yose Desman, S.H.</h4>
-                        <p class="text-gardanusa-gold">Managing Partner</p>
+                <!-- Gallery Section -->
+                <div id="gallery-section" class="bg-white rounded-lg shadow-md">
+                    <div class="flex border-b-2 border-gray-200">
+                        <button data-tab-target="FOTO" class="tab-button px-6 py-3 text-lg font-bold transition-colors bg-[#855B2F] text-white">FOTO</button>
+                        <button data-tab-target="VIDEO" class="tab-button px-6 py-3 text-lg font-bold transition-colors bg-gray-100 text-stone-600 hover:bg-gray-200">VIDEO</button>
                     </div>
-                    <!-- Team Member 2 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/300/300?random=3" alt="Foto Citra Lestari" class="w-28 md:w-48 h-auto mx-auto rounded-full shadow-lg mb-4 object-cover">
-                        <h4 class="md:text-xl font-bold text-gardanusa-dark-red">Pandi Siswanto</h4>
-                        <p class="text-gardanusa-gold">Senior Associate</p>
-                    </div>
-                    <!-- Team Member 3 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/300/300?random=4" alt="Foto Agus Setiawan" class="w-28 md:w-48 h-auto mx-auto rounded-full shadow-lg mb-4 object-cover">
-                        <h4 class="md:text-xl font-bold text-gardanusa-dark-red">Eka Rina Wahyuni, S.H.</h4>
-                        <p class="text-gardanusa-gold">Associate Lawyer</p>
-                    </div>
-                    <!-- Team Member 4 -->
-                    <div class="text-center">
-                        <img src="https://picsum.photos/300/300?random=5" alt="Foto Dewi Anggraini" class="w-28 md:w-48 h-auto mx-auto rounded-full shadow-lg mb-4 object-cover">
-                        <h4 class="md:text-xl font-bold text-gardanusa-dark-red">Bilton Ariansyah</h4>
-                        <p class="text-gardanusa-gold">Supervisor</p>
+                    <div class="p-4">
+                        <div data-tab-content="FOTO" class="tab-content">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery1/200/200" alt="Aksi Damai di Depan Istana Negara" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Aksi Damai di Depan Istana Negara</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery2/200/200" alt="Penyuluhan Hukum di Desa Terpencil" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Penyuluhan Hukum di Desa Terpencil</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery3/200/200" alt="Kunjungan Mahasiswa Hukum ke LBH" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Kunjungan Mahasiswa Hukum ke LBH</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery4/200/200" alt="Sidang Kemenangan Kasus Buruh" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Sidang Kemenangan Kasus Buruh</p></div></a>
+                            </div>
+                        </div>
+                        <div data-tab-content="VIDEO" class="tab-content hidden">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video1/200/200" alt="Dokumenter: Perjuangan Petani Kendeng" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Dokumenter: Perjuangan Petani Kendeng</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video2/200/200" alt="Webinar: Mengenal Hak-Hak Konsumen" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Webinar: Mengenal Hak-Hak Konsumen</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video3/200/200" alt="Podcast: Bincang Hukum Bersama Aktivis" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Podcast: Bincang Hukum Bersama Aktivis</p></div></a>
+                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video4/200/200" alt="Liputan Media: Profil LBH Gardanusa" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Liputan Media: Profil LBH Gardanusa</p></div></a>
+                            </div>
+                        </div>
+                        <div class="text-right mt-4">
+                            <a href="#" class="text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lihat Gallery Selengkapnya &raquo;</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Sidebar -->
+            <div id="sidebar-section" class="lg:col-span-2 space-y-6">
+                <div class="bg-white rounded-lg shadow-md">
+                    <div class="flex border-b-2 border-gray-200">
+                        <button data-tab-target="MITRA" class="tab-button px-4 py-2 text-md font-bold transition-colors flex-grow text-center bg-[#855B2F] text-white">MITRA</button>
+                        <button data-tab-target="PROGRAM" class="tab-button px-4 py-2 text-md font-bold transition-colors flex-grow text-center bg-gray-100 text-stone-600 hover:bg-gray-200">PROGRAM</button>
+                    </div>
+                    <div class="p-4">
+                        <div data-tab-content="MITRA" class="tab-content"><div class="group overflow-hidden"><img src="https://picsum.photos/seed/partner/400/500" alt="MITRA" class="w-full h-auto max-h-[500px] object-cover"></div></div>
+                        <div data-tab-content="PROGRAM" class="tab-content hidden"><div class="group overflow-hidden rounded-md"><img src="https://picsum.photos/seed/program/400/500" alt="PROGRAM" class="w-full h-auto max-h-[500px] object-cover"></div></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <div id="footer"></div>
-    <script src="js/activities-slider.js"></script>
+    <footer class="bg-[#855B2F] text-white">
+        <div class="container mx-auto max-w-6xl px-4 py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Menu Utama</h4>
+                    <ul class="space-y-2 text-stone-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tentang LBH Gardanusa</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Informasi Publik</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Tautan</h4>
+                    <ul class="space-y-2 text-stone-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Komnas HAM</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">YLBHI</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">KontraS</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ICJR</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">LBH Jakarta</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Informasi Kontak</h4>
+                    <address class="not-italic text-stone-300 space-y-2">
+                        <p>Lembaga Bantuan Hukum Gardanusa</p>
+                        <p>Jln. Mampang Prapatan Raya, Kav.71-73, Jakarta Selatan</p>
+                        <p>Telp. 021-1234-5678</p>
+                        <p>Email: lbhgardanusa@gmail.com</p>
+                    </address>
+                    <div class="flex space-x-3 mt-4">
+                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-blue-600 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"></path></svg></a>
+                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1.5 bg-black rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-red-600 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664 4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bg-[#3e3428] py-3">
+            <div class="container mx-auto max-w-6xl px-4 text-center text-sm text-stone-400">
+                Hak Cipta © 2025 LBH Gardanusa. Semua hak dilindungi.
+            </div>
+        </div>
+    </footer>
 
-
+    <script src="index.js"></script>
 </body>
 </html>
