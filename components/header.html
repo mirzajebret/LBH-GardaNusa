@@ -1,35 +1,84 @@
- <!-- Header & Navbar -->
+<!-- Top section with logo and background -->
+<div class="relative"></div>
+<div class="container mx-auto max-w-6xl px-4 py-4 relative bg-cover bg-center" 
+style="background-image: url('https://fh.untar.ac.id/wp-content/uploads/2025/03/Sejarah-Bendera-Pusaka-Merah-Putih-Indonesia.jpg')">
 
-        <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa.webp" alt="Logo Gardanusa" class="md:h-[61px] md:w-[61px] h-8 w-8 mr-4">
-                <a href="#home" class="text-xl md:text-2xl font-bold text-white tracking-wider font-serif">
-                LBH GARDANUSA
-                </a>
+<!-- Overlay putih semi-transparan -->
+<div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+
+        <div class="flex items-center space-x-4 z-10 relative">
+            <div class=" w-28 h-28">
+                <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa2.webp" alt="LBH Gardanusa Logo">
             </div>
-            
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" class="text-white hover:text-gardanusa-dark-red transition duration-300">Home</a>
-                <a href="/about.html" class="text-white hover:text-gardanusa-dark-red transition duration-300">About</a>
-                <a href="#services" class="text-white hover:text-gardanusa-dark-red transition duration-300">Services</a>
-                <a href="#team" class="text-white hover:text-gardanusa-dark-red transition duration-300">Team</a>
-                <a href="#contact" class="text-white hover:text-gardanusa-dark-red transition duration-300">Contact</a>
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-wider" style="font-family: 'Teko', sans-serif">LEMBAGA BANTUAN HUKUM</h1>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white" style="font-family: 'Teko', sans-serif">GARDANUSA</h2>
             </div>
-            <a href="#contact" class="hidden md:block bg-black text-white font-medium py-2 px-6 transition duration-300 shadow-lg">
-                Konsultasi Gratis
-            </a>
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden ">
-            <a href="/#home" class="block text-center py-2 text-white hover:bg-gardanusa-dark-red hover:text-white transition duration-300">Home</a>
-            <a href="/about.html" class="block text-center py-2 text-white hover:bg-gardanusa-dark-red hover:text-white transition duration-300">About</a>
-            <a href="/#services" class="block text-center py-2 text-white hover:bg-gardanusa-dark-red hover:text-white transition duration-300">Services</a>
-            <a href="/#team" class="block text-center py-2 text-white hover:bg-gardanusa-dark-red hover:text-white transition duration-300">Team</a>
-            <a href="/#contact" class="block text-center py-2 text-white hover:bg-gardanusa-dark-red hover:text-white transition duration-300">Contact</a>
-            <a href="/#contact" class="font-medium block text-center py-4 bg-gardanusa-gold text-white transition duration-300">Konsultasi Gratis</a>
         </div>
+    </div>
+    
+</div>
+
+<!-- Main Navigation -->
+<nav class="bg-[#855B2F] border-b-4 border-[#8c7b6a]">
+    <div class="container mx-auto max-w-6xl px-4">
+        <div class="flex justify-between items-center">
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center">
+                <li><a href="/about.html" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg><span class="ml-2 font-semibold uppercase tracking-wider text-sm">Profil</span></a></li>
+                <li><a href="/berita.html" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Berita & Media</span></a></li>
+                <li><a href="/layanan-data.html" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Layanan Data</span></a></li>
+                <li><a href="/publikasi.html" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Publikasi</span></a></li>
+            </ul>
+
+            <!-- Mobile: Home icon link and Hamburger button -->
+            <div class="flex-1 flex justify-between items-center md:hidden">
+                <a href="/index.html" class="flex items-center p-3 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </a>
+                <button id="hamburger-button" class="text-white p-3 focus:outline-none" aria-label="Toggle Menu">
+                    <svg id="hamburger-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="hamburger-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+         <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col">
+                <li><a href="/about.html" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Profil</span></a></li>
+                <li><a href="/berita.html" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Berita & Media</span></a></li>
+                <li><a href="/layanan-data.html" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Layanan Data</span></a></li>
+                <li><a href="/publikasi.html" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Publikasi</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Quick Links -->
+<div class="bg-gray-100 border-b border-gray-200">
+    <div class="container mx-auto max-w-6xl px-4 py-2">
+        <ul class="grid grid-cols-3 md:grid-cols-6 gap-2 text-center">
+            <li><a href="/kontak.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h4M9 12h6"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">KONSULTASI</span></a></li>
+            <li><a href="/kontak.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">LAPOR!</span></a></li>
+            <li><a href="/kontak.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">WEBMAIL</span></a></li>
+            <li><a href="/berita.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h.01M17 17h.01"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">SIARAN PERS</span></a></li>
+            <li><a href="/publikasi.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.938 6.126a9 9 0 111.416 12.748"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">PERPUSTAKAAN</span></a></li>
+            <li><a href="/donasi.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">DONASI</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Secondary Navigation -->
+<div class="bg-white border-b border-gray-200 hidden md:block">
+    <div class="container mx-auto max-w-6xl px-4 py-2">
+        <ul class="flex flex-wrap justify-center items-center text-sm font-medium text-stone-500">
+            <li><a href="/services/pidana.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Pidana</a></li><li class="text-gray-300">|</li>
+            <li><a href="/services/perdata.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Perdata</a></li><li class="text-gray-300">|</li>
+            <li><a href="/services/bisnis.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Tata Usaha Negara</a></li><li class="text-gray-300">|</li>
+            <li><a href="/about.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi HAM</a></li><li class="text-gray-300">|</li>
+            <li><a href="/about.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Buruh & Industri</a></li><li class="text-gray-300">|</li>
+            <li><a href="/program.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Riset & Advokasi</a></li><li class="text-gray-300">|</li>
+            <li><a href="/program.html" class="px-3 py-1 hover:text-stone-900 transition-colors">Pendidikan & Pelatihan</a></li>
+        </ul>
+    </div>
+</div>

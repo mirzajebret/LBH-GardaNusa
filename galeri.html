@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - LBH-GARDANUSA</title>
+    <meta name="description" content="Dokumentasi foto dan video dari berbagai kegiatan, advokasi, dan program yang diselenggarakan oleh LBH Gardanusa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="/js/include.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gardanusa-dark-red': '#6B1E09',
+                        'gardanusa-gold': '#C39222',
+                        'gardanusa-dark-gold': '#855B2F',
+                        'gardanusa-black': '#111111',
+                        'gardanusa-cream': '#F5EBDD',
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gardanusa-black font-body">
+
+    <!-- Header & Navbar -->
+    <header id="header" class="sticky top-0 z-50 bg-gardanusa-dark-gold backdrop-blur-md shadow-md"></header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold font-sans text-gardanusa-dark-red">Galeri Kegiatan</h1>
+                <p class="mt-2 text-lg text-gray-600">Momen-momen perjuangan kami dalam gambar dan video.</p>
+            </div>
+            
+             <div id="gallery-container" class="bg-white rounded-lg shadow-md">
+                <div class="flex border-b-2 border-gray-200">
+                    <button data-tab-target="FOTO" class="tab-button px-6 py-3 text-lg font-bold transition-colors bg-gardanusa-dark-gold text-white">FOTO</button>
+                    <button data-tab-target="VIDEO" class="tab-button px-6 py-3 text-lg font-bold transition-colors bg-gray-100 text-stone-600 hover:bg-gray-200">VIDEO</button>
+                </div>
+                <div class="p-4 md:p-6">
+                    <!-- Photo Content -->
+                    <div data-tab-content="FOTO" class="tab-content">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/aksi-damai.webp" alt="Aksi Damai di Depan Istana Negara" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Aksi Damai di Depan Istana Negara</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/penyuluhan.webp" alt="Penyuluhan Hukum di Desa Terpencil" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Penyuluhan Hukum di Desa Terpencil</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery3/400/400" alt="Kunjungan Mahasiswa Hukum ke LBH" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Kunjungan Mahasiswa Hukum ke LBH</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery4/400/400" alt="Sidang Kemenangan Kasus Buruh" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Sidang Kemenangan Kasus Buruh</p></div></a>
+                             <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery5/400/400" alt="Seminar Hukum Nasional" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Seminar Hukum Nasional</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery6/400/400" alt="Pelatihan Paralegal" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Pelatihan Paralegal</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery7/400/400" alt="Diskusi Publik" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Diskusi Publik</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery8/400/400" alt="Bakti Sosial" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Bakti Sosial</p></div></a>
+                        </div>
+                    </div>
+                    <!-- Video Content -->
+                    <div data-tab-content="VIDEO" class="tab-content hidden">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video1/400/400" alt="Dokumenter: Perjuangan Petani Kendeng" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Dokumenter: Perjuangan Petani Kendeng</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video2/400/400" alt="Webinar: Mengenal Hak-Hak Konsumen" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Webinar: Mengenal Hak-Hak Konsumen</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video3/400/400" alt="Podcast: Bincang Hukum Bersama Aktivis" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Podcast: Bincang Hukum</p></div></a>
+                            <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video4/400/400" alt="Liputan Media: Profil LBH Gardanusa" class="h-40 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-center p-2">Liputan Media: Profil LBH Gardanusa</p></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.getElementById('gallery-container');
+        if (!container) return;
+
+        const tabButtons = container.querySelectorAll('.tab-button');
+        const tabContents = container.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.tabTarget;
+                
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('bg-gardanusa-dark-gold', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-stone-600', 'hover:bg-gray-200');
+                });
+                button.classList.add('bg-gardanusa-dark-gold', 'text-white');
+                button.classList.remove('bg-gray-100', 'text-stone-600', 'hover:bg-gray-200');
+                
+                tabContents.forEach(content => {
+                    if (content.dataset.tabContent === targetId) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>

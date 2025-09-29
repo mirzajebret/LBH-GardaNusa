@@ -34,105 +34,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
-  }
-}
-</script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-gray-100">
 
-    <header>
-        <!-- Top section with logo and background -->
-        <div class="relative"></div>
-        <div class="container mx-auto max-w-6xl px-4 py-4 relative bg-cover bg-center" 
-        style="background-image: url('https://fh.untar.ac.id/wp-content/uploads/2025/03/Sejarah-Bendera-Pusaka-Merah-Putih-Indonesia.jpg')">
-   
-        <!-- Overlay putih semi-transparan -->
-        <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
-   
-                <div class="flex items-center space-x-4 z-10 relative">
-                    <div class=" w-28 h-28">
-                        <img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/LBH-Gardanusa2.webp" alt="">
-                    </div>
-                    <div>
-                        <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-wider" style="font-family: 'Teko', sans-serif">LEMBAGA BANTUAN HUKUM</h1>
-                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white" style="font-family: 'Teko', sans-serif">GARDANUSA</h2>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <!-- Main Navigation -->
-        <nav class="bg-[#855B2F] border-b-4 border-[#8c7b6a]">
-            <div class="container mx-auto max-w-6xl px-4">
-                <div class="flex justify-between items-center">
-                    <!-- Desktop Menu -->
-                    <ul class="hidden md:flex items-center">
-                        <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg><span class="ml-2 font-semibold uppercase tracking-wider text-sm">Profil</span></a></li>
-                        <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Berita & Media</span></a></li>
-                        <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Layanan Data</span></a></li>
-                        <li><a href="#" class="flex items-center px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300"><span class="font-semibold uppercase tracking-wider text-sm">Publikasi</span></a></li>
-                    </ul>
-    
-                    <!-- Mobile: Home icon link and Hamburger button -->
-                    <div class="flex-1 flex justify-between items-center md:hidden">
-                        <a href="#" class="flex items-center p-3 text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                        </a>
-                        <button id="hamburger-button" class="text-white p-3 focus:outline-none" aria-label="Toggle Menu">
-                            <svg id="hamburger-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                            <svg id="hamburger-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </button>
-                    </div>
-                </div>
-                 <!-- Mobile Menu Dropdown -->
-                <div id="mobile-menu" class="hidden md:hidden">
-                    <ul class="flex flex-col">
-                        <li><a href="#" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Profil</span></a></li>
-                        <li><a href="#" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Berita & Media</span></a></li>
-                        <li><a href="#" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Layanan Data</span></a></li>
-                        <li><a href="#" class="block px-4 py-3 text-white hover:bg-[#8c7b6a] transition-colors duration-300 border-t border-white/20"><span class="font-semibold uppercase tracking-wider text-sm">Publikasi</span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- Quick Links -->
-        <div class="bg-gray-100 border-b border-gray-200">
-            <div class="container mx-auto max-w-6xl px-4 py-2">
-                <ul class="grid grid-cols-3 md:grid-cols-6 gap-2 text-center">
-                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h4M9 12h6"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">KONSULTASI</span></a></li>
-                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">LAPOR!</span></a></li>
-                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">WEBMAIL</span></a></li>
-                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h.01M17 17h.01"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">SIARAN PERS</span></a></li>
-                    <li><a href="#" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.938 6.126a9 9 0 111.416 12.748"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">PERPUSTAKAAN</span></a></li>
-                    <li><a href="donasi.html" class="flex flex-col sm:flex-row items-center justify-center p-2 text-stone-600 hover:text-rose-700 hover:bg-gray-200 rounded-md transition-colors duration-200 group"><div class="text-rose-600 group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg></div><span class="mt-1 sm:mt-0 sm:ml-2 text-xs font-bold">DONASI</span></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Secondary Navigation -->
-        <div class="bg-white border-b border-gray-200 hidden md:block">
-            <div class="container mx-auto max-w-6xl px-4 py-2">
-                <ul class="flex flex-wrap justify-center items-center text-sm font-medium text-stone-500">
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Pidana</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Perdata</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Tata Usaha Negara</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi HAM</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Divisi Buruh & Industri</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Riset & Advokasi</a></li><li class="text-gray-300">|</li>
-                    <li><a href="#" class="px-3 py-1 hover:text-stone-900 transition-colors">Pendidikan & Pelatihan</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header id="header"></header>
 
     <main class="container mx-auto max-w-6xl p-4 space-y-6">
         <!-- Hero Section -->
@@ -179,23 +85,23 @@
         </div>
 
         <!-- News Section -->
-        <div class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
+        <div id="news-section" class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
             <div class="flex justify-between items-center mb-4 pb-2 border-b-2 border-gray-200">
                 <div class="flex items-center space-x-2">
                     <div class="p-2 bg-[#8c7b6a] rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3h.01M17 17h.01"></path></svg></div>
                     <h3 class="text-xl font-bold text-[#855B2F]">BERITA TERKINI</h3>
                 </div>
-                <a href="#" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
+                <a href="berita.html" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">LBH Gardanusa Dampingi Korban Penggusuran Paksa</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Memperkuat Jaringan Advokasi di Tingkat Nasional</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Sekjen LBH Hadiri Rapat RUU Perlindungan Data Pribadi</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Final Lomba Debat Hukum: Tim UGM Raih Juara</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Peresmian Kantor Cabang Baru di Surabaya oleh Ketua LBH</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Senin, 21 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Usai Tampil di Konferensi Hukum Internasional</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Menegakkan Tiga Pilar Fundamental Bantuan Hukum</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
-                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="#" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Wamenkumham Kunjungi Kantor Pusat LBH Gardanusa</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Kamis, 17 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="artikel/artikel-1.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Pentingnya Bantuan Hukum Pro Bono</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="artikel/artikel-2.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Wanprestasi vs Perbuatan Melawan Hukum (PMH)</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="artikel/artikel-3.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Tips Memilih Pengacara yang Tepat untuk Kasus Anda</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Selasa, 22 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="berita.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Final Lomba Debat Hukum: Tim UGM Raih Juara</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="berita.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Peresmian Kantor Cabang Baru di Surabaya oleh Ketua LBH</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Senin, 21 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="berita.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Usai Tampil di Konferensi Hukum Internasional</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="berita.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Menegakkan Tiga Pilar Fundamental Bantuan Hukum</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Sabtu, 19 Juli 2025</span></div></a></div>
+                <div class="border-b border-dashed border-gray-200 pb-3 last:border-b-0 md:last:border-b-dashed"><a href="berita.html" class="group"><p class="font-semibold text-stone-700 group-hover:text-rose-700 transition">Wamenkumham Kunjungi Kantor Pusat LBH Gardanusa</p><div class="flex items-center text-xs text-gray-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>Kamis, 17 Juli 2025</span></div></a></div>
             </div>
         </div>
 
@@ -212,19 +118,19 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="lg:col-span-2 space-y-6">
                 <!-- Publications Section -->
-                <div class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
+                <div id="publications-section" class="bg-white p-4 rounded-lg shadow-md border-t-4 border-[#8c7b6a]">
                     <div class="flex justify-between items-center mb-4 pb-2 border-b-2 border-gray-200">
                         <div class="flex items-center space-x-2">
                             <div class="p-2 bg-[#8c7b6a] rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg></div>
                             <h3 class="text-xl font-bold text-[#855B2F]">PUBLIKASI HUKUM</h3>
                         </div>
-                        <a href="#" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
+                        <a href="publikasi.html" class="flex items-center text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lainnya <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg></a>
                     </div>
                     <ul class="space-y-3">
-                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Buku Putih Reformasi Agraria 2024</span></a></li>
-                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Panduan Bantuan Hukum Bagi Korban KDRT</span></a></li>
-                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Laporan Tahunan Kebebasan Berpendapat 2023</span></a></li>
-                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Modul Pendidikan Hukum untuk Paralegal</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="artikel/artikel-1.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Buku Putih Reformasi Agraria 2024</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="artikel/artikel-2.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Panduan Bantuan Hukum Bagi Korban KDRT</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="artikel/artikel-3.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Laporan Tahunan Kebebasan Berpendapat 2023</span></a></li>
+                        <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="publikasi.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700 transition-colors">Modul Pendidikan Hukum untuk Paralegal</span></a></li>
                     </ul>
                 </div>
                 
@@ -236,9 +142,9 @@
                             <h3 class="ml-2 text-xl font-bold text-[#855B2F]">LAYANAN ONLINE</h3>
                         </div>
                         <ul class="space-y-3">
-                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Konsultasi Online</span></a></li>
-                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Pengaduan Kasus</span></a></li>
-                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="#" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Perpustakaan Digital</span></a></li>
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="kontak.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Konsultasi Online</span></a></li>
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="kontak.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Pengaduan Kasus</span></a></li>
+                            <li class="border-b border-dashed border-gray-200 pb-3 last:border-b-0"><a href="publikasi.html" class="flex items-center group"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-stone-400 group-hover:text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="ml-2 font-medium text-stone-700 group-hover:text-rose-700">Perpustakaan Digital</span></a></li>
                         </ul>
                     </div>
                     
@@ -253,22 +159,22 @@
                     <div class="p-4">
                         <div data-tab-content="FOTO" class="tab-content">
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/aksi-damai.webp" alt="Aksi Damai di Depan Istana Negara" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Aksi Damai di Depan Istana Negara</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/penyuluhan.webp" alt="Penyuluhan Hukum di Desa Terpencil" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Penyuluhan Hukum di Desa Terpencil</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery3/200/200" alt="Kunjungan Mahasiswa Hukum ke LBH" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Kunjungan Mahasiswa Hukum ke LBH</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery4/200/200" alt="Sidang Kemenangan Kasus Buruh" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Sidang Kemenangan Kasus Buruh</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/aksi-damai.webp" alt="Aksi Damai di Depan Istana Negara" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Aksi Damai di Depan Istana Negara</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/penyuluhan.webp" alt="Penyuluhan Hukum di Desa Terpencil" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Penyuluhan Hukum di Desa Terpencil</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery3/200/200" alt="Kunjungan Mahasiswa Hukum ke LBH" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Kunjungan Mahasiswa Hukum ke LBH</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/gallery4/200/200" alt="Sidang Kemenangan Kasus Buruh" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Sidang Kemenangan Kasus Buruh</p></div></a>
                             </div>
                         </div>
                         <div data-tab-content="VIDEO" class="tab-content hidden">
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video1/200/200" alt="Dokumenter: Perjuangan Petani Kendeng" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Dokumenter: Perjuangan Petani Kendeng</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video2/200/200" alt="Webinar: Mengenal Hak-Hak Konsumen" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Webinar: Mengenal Hak-Hak Konsumen</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video3/200/200" alt="Podcast: Bincang Hukum Bersama Aktivis" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Podcast: Bincang Hukum Bersama Aktivis</p></div></a>
-                                <a href="#" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video4/200/200" alt="Liputan Media: Profil LBH Gardanusa" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Liputan Media: Profil LBH Gardanusa</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video1/200/200" alt="Dokumenter: Perjuangan Petani Kendeng" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Dokumenter: Perjuangan Petani Kendeng</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video2/200/200" alt="Webinar: Mengenal Hak-Hak Konsumen" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Webinar: Mengenal Hak-Hak Konsumen</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video3/200/200" alt="Podcast: Bincang Hukum Bersama Aktivis" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Podcast: Bincang Hukum Bersama Aktivis</p></div></a>
+                                <a href="galeri.html" class="group relative block overflow-hidden rounded-md"><img src="https://picsum.photos/seed/video4/200/200" alt="Liputan Media: Profil LBH Gardanusa" class="h-32 w-full object-cover transform group-hover:scale-110 transition-transform duration-300"><div class="absolute inset-0 bg-black/40"></div><div class="absolute bottom-0 left-0 p-2"><p class="text-white text-xs font-semibold leading-tight">Liputan Media: Profil LBH Gardanusa</p></div></a>
                             </div>
                         </div>
                         <div class="text-right mt-4">
-                            <a href="#" class="text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lihat Gallery Selengkapnya &raquo;</a>
+                            <a href="galeri.html" class="text-sm font-semibold text-stone-500 hover:text-stone-800 transition">Lihat Gallery Selengkapnya &raquo;</a>
                         </div>
                     </div>
                 </div>
@@ -282,8 +188,8 @@
                         <button data-tab-target="PROGRAM" class="tab-button px-4 py-2 text-md font-bold transition-colors flex-grow text-center bg-gray-100 text-stone-600 hover:bg-gray-200">PROGRAM</button>
                     </div>
                     <div class="md:p-4">
-                        <div data-tab-content="MITRA" class="tab-content"><div class="group overflow-hidden"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/butuh-bantuan-hukum2.webp" alt="MITRA" class="w-full h-auto max-h-[500px] object-cover"></div></div>
-                        <div data-tab-content="PROGRAM" class="tab-content hidden"><div class="group overflow-hidden rounded-md"><img src="https://picsum.photos/seed/program/400/500" alt="PROGRAM" class="w-full h-auto max-h-[500px] object-cover"></div></div>
+                        <div data-tab-content="MITRA" class="tab-content"><a href="mitra.html" class="group overflow-hidden"><img src="https://raw.githubusercontent.com/mirzajebret/LBH-GardaNusa/refs/heads/main/img/butuh-bantuan-hukum2.webp" alt="MITRA" class="w-full h-auto max-h-[500px] object-cover"></a></div>
+                        <div data-tab-content="PROGRAM" class="tab-content hidden"><a href="program.html" class="group overflow-hidden rounded-md"><img src="https://picsum.photos/seed/program/400/500" alt="PROGRAM" class="w-full h-auto max-h-[500px] object-cover"></a></div>
                         
                     </div>
                 </div>
@@ -291,54 +197,9 @@
         </div>
     </main>
 
-    <footer class="bg-[#855B2F] text-white">
-        <div class="container mx-auto max-w-6xl px-4 py-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Menu Utama</h4>
-                    <ul class="space-y-2 text-stone-300">
-                        <li><a href="#" class="hover:text-white transition-colors">Beranda</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Tentang LBH Gardanusa</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Informasi Publik</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Kontak</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Tautan</h4>
-                    <ul class="space-y-2 text-stone-300">
-                        <li><a href="#" class="hover:text-white transition-colors">Komnas HAM</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">YLBHI</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">KontraS</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">ICJR</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">LBH Jakarta</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold uppercase tracking-wider border-b-2 border-[#8c7b6a] pb-2 mb-4">Informasi Kontak</h4>
-                    <address class="not-italic text-stone-300 space-y-2">
-                        <p>Lembaga Bantuan Hukum Gardanusa</p>
-                        <p>Jln. Mampang Prapatan Raya, Kav.71-73, Jakarta Selatan</p>
-                        <p>Telp. 021-1234-5678</p>
-                        <p>Email: lbhgardanusa@gmail.com</p>
-                    </address>
-                    <div class="flex space-x-3 mt-4">
-                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-blue-600 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"></path></svg></a>
-                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1.5 bg-black rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
-                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-red-600 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-                        <a href="#" class="text-white hover:text-amber-300 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 p-1 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-full" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg></a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="bg-[#3e3428] py-3">
-            <div class="container mx-auto max-w-6xl px-4 text-center text-sm text-stone-400">
-                Hak Cipta © 2025 LBH Gardanusa. Semua hak dilindungi.
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
-    <script src="index.js"></script>
+    <script src="js/include.js"></script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
-

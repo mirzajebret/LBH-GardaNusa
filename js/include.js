@@ -1,16 +1,28 @@
 function loadComponent(id, url) {
-    return fetch(url)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById(id).innerHTML = html;
-        });
+    const element = document.getElementById(id);
+    if (element) {
+        return fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load component: ${url}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                element.innerHTML = html;
+            })
+            .catch(error => console.error(error));
+    }
+    return Promise.resolve();
 }
 
-Promise.all([
-    loadComponent("header", "/components/header.html"),
-    loadComponent("footer", "/components/footer.html")
-]).then(() => {
-    const script = document.createElement('script');
-    script.src = '/js/script.js'; // Perbaiki path ke root
-    document.body.appendChild(script);
+document.addEventListener("DOMContentLoaded", () => {
+    Promise.all([
+        loadComponent("header", "/components/header.html"),
+        loadComponent("footer", "/components/footer.html")
+    ]).then(() => {
+        const script = document.createElement('script');
+        script.src = '/js/main.js';
+        document.body.appendChild(script);
+    });
 });

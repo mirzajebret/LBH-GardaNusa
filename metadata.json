@@ -1,5 +1,6 @@
 {
-  "name": "LBH-GARDANUSA Company Profile",
-  "description": "Lembaga Bantuan Hukum GARDANUSA",
-  "requestFramePermissions": []
+  "name": "LBH Gardanusa Website Clone",
+  "description": "A modern, responsive clone of a government website, repurposed for a fictional legal aid organization, LBH Gardanusa. Built with plain HTML, vanilla JavaScript, and Tailwind CSS via CDN.",
+  "requestFramePermissions": [],
+  "prompt": ""
 }
